@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulário de Inscrição</h1>
+    <form action="#" method="post">
+        <h2>Informações Pessoais</h2>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required><br>
+
+        <label for="idade">Idade:</label>
+        <input type="number" id="idade" name="idade" required><br>
+
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input type="date" id="data-nascimento" name="data-nascimento" required><br>
+
+        <h2>Preferências do Evento</h2>
+        <label for="temas-interesse">Temas de Interesse:</label>
+        <select id="temas-interesse" name="temas-interesse" multiple>
+            <option value="tecnologia">Tecnologia</option>
+            <option value="negócios">Negócios</option>
+            <option value="saúde">Saúde</option>
+            <!-- Adicione mais opções conforme necessário -->
+        </select><br>
+
+        <label>Workshops:</label><br>
+        <input type="checkbox" id="workshop1" name="workshop1">
+        <label for="workshop1">Workshop 1</label><br>
+
+        <input type="checkbox" id="workshop2" name="workshop2">
+        <label for="workshop2">Workshop 2</label><br>
+        <!-- Adicione mais workshops conforme necessário -->
+
+        <h2>Submissão de Apresentação</h2>
+        <label for="titulo">Título da Apresentação:</label>
+        <input type="text" id="titulo" name="titulo" required><br>
+
+        <label for="resumo">Resumo:</label><br>
+        <textarea id="resumo" name="resumo" rows="4" cols="50" required></textarea><br>
+
+        <label for="anexo">Anexo:</label>
+        <input type="file" id="anexo" name="anexo"><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
